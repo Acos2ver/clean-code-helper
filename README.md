@@ -61,6 +61,12 @@ length = 10
 - Java
 - C++
 
+## Marketplace
+
+Install Clean Code Helper from the Visual Studio Marketplace:
+
+https://marketplace.visualstudio.com/items?itemName=acos2ver.clean-code-helper
+
 ## Author
 
 Olivia Choi, 2026
