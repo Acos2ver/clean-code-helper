@@ -1,71 +1,66 @@
-# clean-code-helper README
+# Clean Code Helper
 
-This is the README for your extension "clean-code-helper". After writing up a brief description, we recommend including the following sections.
+Clean Code Helper is a VS Code extension that highlights and fixes common spelling and whitespace issues while coding.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Detects common spelling mistakes
+- Detects repeated spaces
+- Detects trailing whitespace
+- Provides Quick Fix actions for individual issues
+- Provides a Fix All command for the current file
+- Supports Python, JavaScript, TypeScript, Java, and C++
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+For local testing, package the extension as a VSIX file and install it manually:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+```powershell
+npm run compile
+vsce package
+code --install-extension clean-code-helper-0.0.1.vsix
+```
 
-## Requirements
+## Usage
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open a supported file.
+2. Type code with a common typo or spacing issue.
+3. Hover over the highlighted issue and use Quick Fix, or run the Fix All command from the Command Palette.
 
-## Extension Settings
+## Commands
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Clean Code Helper: Fix All Issues in Current File
 
-For example:
+Fixes all supported issues in the current file, including common typos, repeated spaces, and trailing whitespace.
 
-This extension contributes the following settings:
+## Example
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Before:
 
-## Known Issues
+```python
+message  =  "teh value is wrong"    
+adress  =  "home"
+recieve  =  "email"
+lenght  =  10
+```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+After running Fix All:
 
-## Release Notes
+```python
+message = "the value is wrong"
+address = "home"
+receive = "email"
+length = 10
+```
 
-Users appreciate release notes as you update your extension.
+## Supported Languages
 
-### 1.0.0
+- Python
+- JavaScript
+- TypeScript
+- Java
+- C++
 
-Initial release of ...
+## Author
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Olivia Choi, 2026
