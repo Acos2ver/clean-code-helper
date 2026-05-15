@@ -3,6 +3,20 @@
   "displayName": "Clean Code Helper",
   "description": "Highlight spelling and spacing issues while coding",
   "version": "0.0.1",
+  "license": "MIT",
+  "publisher": "acos2ver",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Acos2ver/clean-code-helper.git"
+  },
+  "keywords": [
+    "spell checker",
+    "whitespace",
+    "quick fix",
+    "lint",
+    "python",
+    "javascript"
+  ],
   "engines": {
     "vscode": "^1.90.0"
   },
